@@ -13,7 +13,10 @@ function largest($numbers)
 
     foreach ($numbers as $number)
     {
-        echo "($largest)";
+        if ($number > $largest)
+        {
+            $largest = $number;
+        }
     }
+    echo "$largest";
 }
-?>
